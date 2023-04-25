@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="productsold">
+	
+
+	<select id="selltb" resultType="ProductSoldVO" parameterType="String">
+		select * from product_sold where seller = #{seller}
+	</select>
+	
+	<select id="buytb" resultType="ProductSoldVO" parameterType="String">
+		select * from product_sold where buyer = #{buyer}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
